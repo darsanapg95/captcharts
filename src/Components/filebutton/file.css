@@ -1,0 +1,60 @@
+.file {
+    margin: 0 90px 0 90px;
+    margin-top: 69px;
+}
+.button {
+    width: 400px;
+    height: 50px;
+    border-radius: 45px;
+    border: 1px solid #E7AD99;
+    background-color: #E7AD99;
+    color: white;
+    margin-left: 450px;
+    margin-top: 150px;
+}
+.images {
+    display: flex;
+    width: 211px;
+    height: 324px;
+}
+.files,
+.files1 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    width: 1334px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.files {
+    height: 337px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.files1 {
+    min-height: 337px;
+}
+
+@media screen and (max-width: 768px) {
+    .file {
+        margin: 0 20px 0 20px;
+        margin-top: auto;
+    }
+    .files,
+    .files1 {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        min-height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        margin-left: 20px;
+        margin-top: 30px;
+        width: 250px;
+    }
+}

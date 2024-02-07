@@ -1,0 +1,18 @@
+.popup {
+    margin: 0 90px 0 90px;
+}
+
+.popup_1 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    min-width: 1334px;
+    min-height: 337px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.popup_2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
