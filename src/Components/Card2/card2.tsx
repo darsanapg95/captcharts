@@ -2,12 +2,12 @@ import './card2.css';
 import Buttons from '../Button/button';
 import camel from '../../assets/camel.svg';
 import { useEffect } from 'react';
+import { Button } from '@mantine/core';
 
 interface Props {
     file: File;
 }
 export default function Card2({ file }: Props) {
-    // Component cleanup
 useEffect(() => {
     return () => {
         URL.revokeObjectURL(URL.createObjectURL(file));
@@ -17,28 +17,14 @@ useEffect(() => {
     return (
         <div className="card2">
             <div className="card_2">
+                <Button className='btn3'>Report</Button>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div>
-            <img src={URL.createObjectURL(file)} style={{width:'1294px',height:'608px'}}/>
-                {/* <img src={camel} style={{width:'1294px',height:'608px'}}/> */}
+            <img src={URL.createObjectURL(file)} className='img'/>
             </div>
-            <div style={{display:'flex',justifyContent:'space-between',margin:'0 20px 0 20px'}}>
-                <Buttons 
-                title={'Like'} 
-                width={'642px'} 
-                height={'74px'} 
-                backgroundColor={'white'} 
-                color={'#CF796C'}
-                border={' 1px solid #CF796C'}
-                />
-                <Buttons 
-                title={'Comment'} 
-                width={'642px'} 
-                height={'74px'} 
-                backgroundColor={'#CF796C'} 
-                color={'white'}
-                border={' 1px solid #CF796C'}
-                />
+            <div className='btn'>
+                <Button className='btn2'>Like</Button>
+                <Button className='btn1'>Comment</Button>
             </div>
             </div>
         </div>
